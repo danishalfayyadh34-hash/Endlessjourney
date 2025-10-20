@@ -1,0 +1,215 @@
+:root {
+    --merah-maron: #8b0000;
+    --emas: #ffd700;
+    --biru-laut: #0099cc;
+    --hijau-pirate: #056f42;
+    --putih: #fff;
+    --hitam: #0a0a0a;
+    --transisi: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #02121b, #0b2c3f);
+    color: var(--putih);
+    font-family: 'Chewy', cursive;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(5, 65, 90, 0.95);
+    color: var(--emas);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px var(--emas);
+}
+
+nav a {
+    color: var(--putih);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transisi);
+}
+
+nav a:hover {
+    color: var(--emas);
+    text-shadow: 0 0 12px var(--emas);
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #0a3d62, #02121b);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: var(--emas);
+    text-shadow: 0 0 25px var(--emas);
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #e0faff;
+}
+
+.hero-content button {
+    margin-top: 30px;
+    background: var(--emas);
+    color: var(--hitam);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: var(--transisi);
+}
+
+.hero-content button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--emas);
+    background: #fff7b0;
+}
+
+section {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: var(--emas);
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px var(--emas);
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 3px solid var(--emas);
+    border-radius: 15px;
+    width: 280px;
+    padding: 25px;
+    transition: var(--transisi);
+    color: #fff9e6;
+}
+
+.project-card:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 0 20px var(--emas);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 320px;
+    padding: 12px;
+    border: 2px solid var(--emas);
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    color: var(--putih);
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background: var(--emas);
+    color: var(--hitam);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transisi);
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--emas);
+}
+
+.ig-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    color: var(--hitam);
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transisi);
+    box-shadow: 0 0 15px rgba(255, 197, 55, 0.7);
+}
+
+.ig-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ffc371, #ff5f6d);
+    box-shadow: 0 0 25px #ffc371;
+}
+
+footer {
+    background: #022530;
+    padding: 20px;
+    text-align: center;
+    color: #e0faff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animasi ombak */
+.ocean {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 200px;
+    background: url('https://i.imgur.com/Sr9U4yw.png') repeat-x;
+    animation: wave 20s linear infinite;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+@keyframes wave {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.running-text {
+  display: none;
+}
+img {
+  display: none;
+}
+
+
